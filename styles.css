@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8ff;
+}
+
+:root {
+--primary-color: #A909E4;
+}
+
+.header {
+    width: 100%;
+    height: 5.8rem;
+    background: var(--primary-color);
+    align-items: center;
+    display: flex;
+}
+
+.header-title {
+    vertical-align: middle;
+    text-align: left;
+    margin-left: 1rem;
+    color: #f8f8ff;
+}
+
+.entrar-button {
+    appearance: none;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5rem;
+    right: 0;
+    margin-right: 2rem;
+    background: #f8f8ff;
+    border: 0;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--primary-color);;
+    box-shadow: 0.2rem 0.2rem 0.3rem #666666;
+}
+
+.entrar-button i {
+    padding-left: 0.3rem;
+}
+
+.cadastrar-button {
+    appearance: none;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5rem;
+    right: 7rem;
+    margin-right: 1rem;
+    background: #f8f8ff;
+    border: 0;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    box-shadow: 0.2rem 0.2rem 0.3rem #666666;
+}
+
+.cadastrar-button i {
+    padding-left: 0.4rem;
+}
+
+.cadastrar-button:hover, .entrar-button:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.fa-chevron-right {
+    color: var(--primary-color);
+}
+
+.product-section-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.product-section {
+    margin-top: 2rem;
+    width: 95%;
+    height: 31rem;
+    background: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 0.35rem #808080;
+}
+
+.product-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 2rem 0 0 0;
+    display: inline-block;
+}
+
+.product-name {
+    color: var(--primary-color);
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #000000;
+    
+    display: inline-block;
+}
