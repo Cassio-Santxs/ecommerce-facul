@@ -42,7 +42,7 @@ body {
     transition: all 0.3s;
     font-weight: bold;
     font-size: 0.9rem;
-    color: var(--primary-color);;
+    color: var(--primary-color);
     box-shadow: 0.2rem 0.2rem 0.3rem #666666;
 }
 
@@ -84,35 +84,91 @@ body {
 }
 
 .product-section-container {
-    display: flex;
-    align-content: center;
     justify-content: center;
-    vertical-align: middle;
+    display: flex;
 }
 
 .product-section {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
     width: 95%;
-    height: 31rem;
     background: #ffffff;
-    border-radius: 2rem;
-    box-shadow: 0rem 0rem 0.35rem #808080;
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.1rem 0.35rem #808080;
+}
+
+.product-img-container { 
+    flex-basis: 60%;
 }
 
 .product-img {
-    width: 50%;
-    height: 50%;
-    border-radius: 2rem 0 0 0;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem 0 0 0.3rem;
 }
 
 .product-name {
     color: var(--primary-color);
-    margin-left: 0.5rem;
     padding: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
-    background: #000000;
+    flex-basis: 45%;
+    border: 0.2rem solid var(--primary-color);
+    margin: 5.2rem 1.5rem 2rem 0rem;
+    border-radius: 0.5rem;
+    position: relative;
+    height: 35%;
+}
+
+.welcome-title {
+    padding: 0.6rem;
+    position: absolute;
+    background-color: white;
+    top: -1.5rem;
+    left: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.welcome-desc {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.welcome-desc-2 {
+    margin-top: 0.5rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.access-button {
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    left: 9.7rem;
+    bottom: -6.5rem;
+    appearance: none;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: white;
+    box-shadow: 0.2rem 0.2rem 0.3rem #666666;
+    width: 15rem;
+}
+
+.access-button i {
+    margin-left: 0.5rem;
+    transition: transform 0.8s ease-in-out;
+    color: white;
+}
+
+.access-button:hover {
+    transform: scale(1.1);
     
-    display: inline-block;
+}
+
+.access-button:hover i {
+    transform: rotate(360deg);
 }
