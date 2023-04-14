@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./content/Styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="./content/Scripts/scripts.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header-title">E-commerce</p>
-        <div class="search-button-container">
-            <button class="entrar-button">Entrar<i class="fa fa-chevron-right"></i></button>
-            <button class="cadastrar-button">Cadastrar<i class="fa fa-user"></i></button>
+   <iframe src="./content/View/header.html" frameborder="0" class="header-iframe"></iframe>
+    <main>
+        <div class="product-section-container">
+            <section class="product-section">
+                    <div class="product-img-container">
+                        <img class="product-img" src="content/imgs/foto.png" alt="Subaru">
+                    </div>
+                    <div class="desc-container">
+                        <div class="product-name">
+                            <h3 class="welcome-title">Bem-vindo ao nosso E-commerce!</h3>
+                            <p class="welcome-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing magni officia totam similique aut iure doloremque! Esse saepe delectus non, quibusdam perspiciatis accusamus?
+                            </p>
+                            <p class="welcome-desc-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil neque adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="access-button-container">
+                            <button type="button" id="botao" class="access-button">
+                                Vamos comprar
+                                <i class="fa fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+            </section>
         </div>
-    </header>
-    <div class="product-section-container">
-        <section class="product-section">
-            <div class="product-img-container">
-                <img class="product-img" src="content/imgs/foto.png" alt="Subaru">
-            </div>
-            <div class="product-name">
-                <h3 class="welcome-title">Bem-vindo ao nosso E-commerce!</h3>
-                <p class="welcome-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing magni officia totam similique aut iure doloremque! Esse saepe delectus non, quibusdam perspiciatis accusamus?
-                </p>
-                <p class="welcome-desc-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil neque.
-                </p>
-                <button class="access-button">
-                    Vamos comprar
-                    <i class="fa fa-shopping-bag"></i>
-                </button>
-            </div>
-        </section>
-    </div>
+    </main>
+    <iframe src="./content/View/footer.html" frameborder="0" class="footer-iframe"></iframe>
 </body>
 </html>
